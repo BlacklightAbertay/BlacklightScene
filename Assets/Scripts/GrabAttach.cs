@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrabAttach : MonoBehaviour {
 
-	
+	GameObject leftHand;
 
 	// Use this for initialization
 	void Start ()
@@ -20,9 +20,11 @@ public class GrabAttach : MonoBehaviour {
 
 	private void OnCollisionStay(Collision collision)
 	{
-		if (collision.gameObject.tag == "hand")
+		leftHand = GameObject.FindGameObjectWithTag("hand");
+		if (collision.gameObject == leftHand)
 		{
-
+			transform.position = leftHand.transform.position;
+			Debug.Log("grabbable object colliding with left hand");
 		}
 	}
 }

@@ -8,14 +8,14 @@ public class ScalingHologram : MonoBehaviour
 {
 	Vector3 startScale;
 	float hololensScale;
-	bool isShrunk = false;
 	bool isRun = false;
 	Vector3 startPositionPlayer;
+	Vector3 lastFramePos;
 
 	private void Start()
 	{
 		startScale = transform.localScale;
-		hololensScale = 0.02f;
+		hololensScale = 0.03f;
 
 		if(!UnityEngine.XR.WSA.HolographicSettings.IsDisplayOpaque)
 		{
@@ -34,7 +34,6 @@ public class ScalingHologram : MonoBehaviour
 		{
 			Debug.Log("Scaling world");
 		}
-
 	}
 
 	private void Update()
@@ -44,24 +43,16 @@ public class ScalingHologram : MonoBehaviour
 		if (!UnityEngine.XR.WSA.HolographicSettings.IsDisplayOpaque)
 		{
 			GameObject[] player = GameObject.FindGameObjectsWithTag("VRPlayer");
-			if (player.Length > 0 && !isShrunk)
+				
+			if (player.Length == 2)
 			{
 				Debug.Log("Scaling Player");
-				
-				for (int i = 0; i < player.Length; i++)
-				{
-					player[i].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
-
-					if (player.Length > 1)
-					{
-						isShrunk = true;
-					}
-
-					player[1].transform.position = startPositionPlayer;
-				}
+				player[1].transform.localScale = new Vector3(hololensScale, hololensScale, hololensScale);
+					
+				player[1].transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
+				//player[1].transform.position = lastFramePos + ((player[1].transform.position - lastFramePos) * hololensScale);
+				//lastFramePos = player[1].transform.position;
 			}
 		}
-			
 	}
-
 }

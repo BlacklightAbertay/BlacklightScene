@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class FracturedObject : MonoBehaviour {
 
-	public bool breakOnCollide = false;
+	public float minimumHitVelocity = 5.0f;
+	public int hitsToBreak = 1;
+	int hitsTaken = 0;
+
 	public List<FracturedObjectSegment> segments;
+	public AudioClip[] hitSounds;
+	public AudioClip breakSound;
 
 	// Use this for initialization
 	void Start ()
@@ -41,11 +46,27 @@ public class FracturedObject : MonoBehaviour {
 		{
 			segment.Activate(explosionCentre.Value, explosionForce, explosionRadius, rBody.mass/segments.Count);
 		}
+
+		GetComponent<AudioSource>().clip = breakSound;
+		GetComponent<AudioSource>().Play();
 	}
 
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider other)
 	{
-		if (breakOnCollide)
+		Axe axe = other.gameObject.GetComponent<Axe>();
+		if (axe != null)
+		{
+			if (axe.velocity.magnitude > minimumHitVelocity)
+			{
+				hitsTaken++;
+
+				int i = Random.Range(0, hitSounds.Length);
+				// play hitsounds[i];
+				GetComponent<AudioSource>().clip = hitSounds[i];
+				GetComponent<AudioSource>().Play();
+			}
+		}
+		if (hitsTaken >= hitsToBreak)
 		{
 			Vector3 explosionPosition = transform.position;
 			Break(explosionPosition, 2.0f, 2.0f);

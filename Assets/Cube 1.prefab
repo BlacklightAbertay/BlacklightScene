@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23967108101965400}
   - component: {fileID: 114812429644620342}
   - component: {fileID: 114882421798038184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube 1
   m_TagString: VRPlayer
   m_Icon: {fileID: 0}

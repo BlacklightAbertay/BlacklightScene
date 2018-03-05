@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - VRPlayer
+  - Hand
+  - StepUp
+  - StepDown
+  - PlayerItem
   layers:
   - Default
   - TransparentFX
@@ -14,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Items
   - 
   - 
   - 

@@ -66,7 +66,6 @@ public class Inventory : MonoBehaviour
 
 		float selectedDivisionF = angle / divisions;
 		int selectedDivision = Mathf.FloorToInt(selectedDivisionF);
-		Debug.Log(selectedDivision);
 
 		if (selectedDivision != selectedItem)
 		{

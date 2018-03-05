@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: b61bc8978485c1a4a9107be7c6b79243
+timeCreated: 1519818315
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature_001
+    100004: Bone
+    100006: Bone_002
+    100008: Bone_004
+    100010: Bone_005
+    100012: Bone_006
+    100014: Bone_007
+    100016: Bone_008
+    100018: Bone_009
+    100020: Bone_010
+    100022: Bone_011
+    100024: Bone_012
+    100026: Bone_013
+    100028: Bone_014
+    100030: Bone_015
+    100032: Bone_016
+    100034: Bone_017
+    100036: Bone_018
+    100038: calf_L
+    100040: calf_R
+    100042: calfIK_L
+    100044: calfIK_R
+    100046: center
+    100048: Circle
+    100050: Cube
+    100052: Cube_004
+    100054: Cube_007
+    100056: Glove
+    100058: heel_L
+    100060: heel_R
+    100062: kneeTarget_L
+    100064: kneeTarget_R
+    100066: pelvis
+    100068: root
+    100070: //RootNode
+    100072: spine1
+    100074: spine1_001
+    100076: spine1_001_L_001
+    100078: spine1_001_L_002
+    100080: spine1_001_L_003
+    100082: spine1_001_R_001
+    100084: spine1_001_R_002
+    100086: spine1_001_R_003
+    100088: spine1_002
+    100090: thigh_L
+    100092: thigh_R
+    100094: toe_L
+    100096: toe_R
+    400000: Armature
+    400002: Armature_001
+    400004: Bone
+    400006: Bone_002
+    400008: Bone_004
+    400010: Bone_005
+    400012: Bone_006
+    400014: Bone_007
+    400016: Bone_008
+    400018: Bone_009
+    400020: Bone_010
+    400022: Bone_011
+    400024: Bone_012
+    400026: Bone_013
+    400028: Bone_014
+    400030: Bone_015
+    400032: Bone_016
+    400034: Bone_017
+    400036: Bone_018
+    400038: calf_L
+    400040: calf_R
+    400042: calfIK_L
+    400044: calfIK_R
+    400046: center
+    400048: Circle
+    400050: Cube
+    400052: Cube_004
+    400054: Cube_007
+    400056: Glove
+    400058: heel_L
+    400060: heel_R
+    400062: kneeTarget_L
+    400064: kneeTarget_R
+    400066: pelvis
+    400068: root
+    400070: //RootNode
+    400072: spine1
+    400074: spine1_001
+    400076: spine1_001_L_001
+    400078: spine1_001_L_002
+    400080: spine1_001_L_003
+    400082: spine1_001_R_001
+    400084: spine1_001_R_002
+    400086: spine1_001_R_003
+    400088: spine1_002
+    400090: thigh_L
+    400092: thigh_R
+    400094: toe_L
+    400096: toe_R
+    2100000: legs__legs_nrml
+    2100002: material
+    2100004: legs
+    2100006: unnamed
+    2100008: glove__Glove_nrml
+    4300000: Cube
+    4300002: Cube_004
+    4300004: Cube_007
+    4300006: Circle
+    4300008: Glove
+    7400000: Default Take
+    7400002: Idle
+    7400004: Walk
+    9500000: //RootNode
+    13700000: Circle
+    13700002: Cube
+    13700004: Cube_004
+    13700006: Cube_007
+    13700008: Glove
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

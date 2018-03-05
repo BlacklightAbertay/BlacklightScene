@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4842469490161948}
   - component: {fileID: 33181826977989252}
   - component: {fileID: 23120424305839466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4281375048205056}
   - component: {fileID: 33285800538158086}
   - component: {fileID: 23710078660617180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,9 +55,10 @@ GameObject:
   - component: {fileID: 4442071642055812}
   - component: {fileID: 114505703513531994}
   - component: {fileID: 65363436421855996}
-  m_Layer: 0
+  - component: {fileID: 114454699706380240}
+  m_Layer: 9
   m_Name: AxePrefab
-  m_TagString: Untagged
+  m_TagString: PlayerItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,11 +194,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640297693572636}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.4896097, y: 4.958464, z: 1}
   m_Center: {x: 4.583007, y: 0.82604307, z: 2.2190823e-14}
+--- !u!114 &114454699706380240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640297693572636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a22343d1abf440a350fc2d6eff97d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &114505703513531994
 MonoBehaviour:
   m_ObjectHideFlags: 1

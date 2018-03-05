@@ -13,6 +13,8 @@ public class InputHandler : AttachToController
 
 	public Vector2 thumbstickPosition = new Vector2(0.0f, 0.0f);
 
+	public bool triggerPressed = false;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -45,6 +47,7 @@ public class InputHandler : AttachToController
 			touchpadPostion = obj.state.touchpadPosition;
 			touchpadTouched = obj.state.touchpadTouched;
 			thumbstickPosition = obj.state.thumbstickPosition;
+			triggerPressed = obj.state.selectPressed;
 		}
 	}
 }
