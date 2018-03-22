@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: 1b751f9329c3d504fae36a6dd565e979
+timeCreated: 1520947155
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: backBoard
+    100002: //RootNode
+    100004: Insulation0
+    100006: Insulation0_001
+    100008: Insulation0_002
+    100010: Insulation0_003
+    100012: Insulation0_004
+    100014: Insulation0_005
+    100016: Insulation0_006
+    100018: Insulation0_007
+    100020: Insulation1
+    100022: Insulation1_001
+    100024: Insulation1_002
+    100026: Insulation1_003
+    100028: Insulation1_004
+    100030: Insulation1_005
+    100032: Insulation1_006
+    100034: Insulation1_007
+    100036: plasterBoard
+    100038: plasterBoard_cell
+    100040: plasterBoard_cell_001
+    100042: plasterBoard_cell_002
+    100044: plasterBoard_cell_003
+    100046: plasterBoard_cell_004
+    100048: plasterBoard_cell_005
+    100050: plasterBoard_cell_007
+    100052: struts
+    400000: backBoard
+    400002: //RootNode
+    400004: Insulation0
+    400006: Insulation0_001
+    400008: Insulation0_002
+    400010: Insulation0_003
+    400012: Insulation0_004
+    400014: Insulation0_005
+    400016: Insulation0_006
+    400018: Insulation0_007
+    400020: Insulation1
+    400022: Insulation1_001
+    400024: Insulation1_002
+    400026: Insulation1_003
+    400028: Insulation1_004
+    400030: Insulation1_005
+    400032: Insulation1_006
+    400034: Insulation1_007
+    400036: plasterBoard
+    400038: plasterBoard_cell
+    400040: plasterBoard_cell_001
+    400042: plasterBoard_cell_002
+    400044: plasterBoard_cell_003
+    400046: plasterBoard_cell_004
+    400048: plasterBoard_cell_005
+    400050: plasterBoard_cell_007
+    400052: struts
+    2100000: unnamed
+    2300000: backBoard
+    2300002: Insulation0
+    2300004: Insulation0_001
+    2300006: Insulation0_002
+    2300008: Insulation0_003
+    2300010: Insulation0_004
+    2300012: Insulation0_005
+    2300014: Insulation0_006
+    2300016: Insulation0_007
+    2300018: Insulation1
+    2300020: Insulation1_001
+    2300022: Insulation1_002
+    2300024: Insulation1_003
+    2300026: Insulation1_004
+    2300028: Insulation1_005
+    2300030: Insulation1_006
+    2300032: Insulation1_007
+    2300034: plasterBoard
+    2300036: plasterBoard_cell
+    2300038: plasterBoard_cell_001
+    2300040: plasterBoard_cell_002
+    2300042: plasterBoard_cell_003
+    2300044: plasterBoard_cell_004
+    2300046: plasterBoard_cell_005
+    2300048: plasterBoard_cell_007
+    2300050: struts
+    3300000: backBoard
+    3300002: Insulation0
+    3300004: Insulation0_001
+    3300006: Insulation0_002
+    3300008: Insulation0_003
+    3300010: Insulation0_004
+    3300012: Insulation0_005
+    3300014: Insulation0_006
+    3300016: Insulation0_007
+    3300018: Insulation1
+    3300020: Insulation1_001
+    3300022: Insulation1_002
+    3300024: Insulation1_003
+    3300026: Insulation1_004
+    3300028: Insulation1_005
+    3300030: Insulation1_006
+    3300032: Insulation1_007
+    3300034: plasterBoard
+    3300036: plasterBoard_cell
+    3300038: plasterBoard_cell_001
+    3300040: plasterBoard_cell_002
+    3300042: plasterBoard_cell_003
+    3300044: plasterBoard_cell_004
+    3300046: plasterBoard_cell_005
+    3300048: plasterBoard_cell_007
+    3300050: struts
+    4300000: plasterBoard_cell_007
+    4300002: plasterBoard_cell_005
+    4300004: plasterBoard_cell_004
+    4300006: plasterBoard_cell_003
+    4300008: plasterBoard_cell_002
+    4300010: plasterBoard_cell_001
+    4300012: plasterBoard_cell
+    4300014: Insulation0_007
+    4300016: Insulation0_006
+    4300018: Insulation0_005
+    4300020: Insulation0_004
+    4300022: Insulation0_003
+    4300024: Insulation0_002
+    4300026: Insulation0_001
+    4300028: Insulation1_007
+    4300030: Insulation1_006
+    4300032: Insulation1_005
+    4300034: Insulation1_004
+    4300036: Insulation1_003
+    4300038: Insulation1_002
+    4300040: Insulation1_001
+    4300042: plasterBoard
+    4300044: Insulation1
+    4300046: backBoard
+    4300048: Insulation0
+    4300050: struts
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

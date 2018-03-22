@@ -11,7 +11,7 @@ namespace HoloToolkit.Unity.InputModule
 	{
 
 		public bool isTransformEnabled = true;
-		public bool isDragging = true;
+		public bool isDragging = false;
 		public bool isScaling = false;
 		public bool isRotating = false;
 		public bool isKeywordDrag = true;
@@ -20,7 +20,7 @@ namespace HoloToolkit.Unity.InputModule
 
 		private float _resizeSpeedFactor = 0.5f;
 		private float _dragSpeedFactor = 0.2f;
-		private int _maxDragDistance = 20;
+		private int _maxDragDistance = 50;
 		private float _rotationSpeedFactor = 200.0f;
 
 		private Vector3 _previousPosition;
@@ -42,6 +42,7 @@ namespace HoloToolkit.Unity.InputModule
 
 		public void OnManipulationStarted(ManipulationEventData eventData)
 		{
+			Debug.Log("manipulation started");
 
 			if (!isTransformEnabled)
 			{
@@ -93,18 +94,21 @@ namespace HoloToolkit.Unity.InputModule
 
 				if (isDragging)
 				{
+					Debug.Log("calling drag script");
 					_dragFactor = (Mathf.Abs(_handDistance) * 10);
 					drag(eventData.CumulativeDelta);
 				}
 
 				if (isScaling)
 				{
+					Debug.Log("calling scale script");
 					_scaleFactor = (Mathf.Abs(_handDistance) * 10);
 					scale(eventData.CumulativeDelta);
 				}
 
 				if (isRotating)
 				{
+					Debug.Log("calling rotate script");
 					_rotationFactor = (Mathf.Abs(_handDistance) * 10);
 					Quaternion rotation = new Quaternion(eventData.CumulativeDelta.x * _rotationFactor, eventData.CumulativeDelta.y * _rotationFactor, eventData.CumulativeDelta.z * _rotationFactor, 0.0f);
 					rotate(rotation);
@@ -132,9 +136,10 @@ namespace HoloToolkit.Unity.InputModule
 		void drag(Vector3 newPosition)
 		{
 			Vector3 targetPosition = _previousPosition + newPosition * _dragFactor;
-
+			Debug.Log("Checking distance before dragging: " + Vector3.Distance(_previousPosition, targetPosition));
 			if (Vector3.Distance(_previousPosition, targetPosition) <= _maxDragDistance)
 			{
+				Debug.Log("transforming position");
 				transform.position = Vector3.Lerp(transform.position, targetPosition, _dragSpeedFactor);
 			}
 		}
@@ -146,6 +151,8 @@ namespace HoloToolkit.Unity.InputModule
 
 		public void OnManipulationCompleted(ManipulationEventData eventData)
 		{
+			Debug.Log("manipulation completed");
+
 			if (!isDragging)
 			{
 				return;
@@ -170,6 +177,8 @@ namespace HoloToolkit.Unity.InputModule
 
 		public void OnManipulationCanceled(ManipulationEventData eventData)
 		{
+			Debug.Log("manipulation canceled");
+
 			if (!isDragging)
 			{
 				return;

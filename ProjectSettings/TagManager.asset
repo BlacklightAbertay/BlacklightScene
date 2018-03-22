@@ -5,10 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - VRPlayer
-  - Hand
   - StepUp
   - StepDown
   - PlayerItem
+  - LeftHand
+  - RightHand
+  - WaterParticles
+  - GrabbableItem
+  - SmokeyArea
   layers:
   - Default
   - TransparentFX

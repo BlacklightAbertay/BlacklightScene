@@ -7,12 +7,13 @@ using UnityEngine.XR.WSA.Input;
 public class Hose : MonoBehaviour {
 
 	public InputHandler inputHandler;
-	ParticleSystem particleSystem;
+	public GameObject particleSystem;
+	//ParticleSystem particleSystem = null;
 	bool spraying = false;
 
 	// Use this for initialization
 	void Start () {
-		particleSystem = GetComponent<ParticleSystem>();
+		//particleSystem = GetComponent<ParticleSystem>();
 	}
 	
 	// Update is called once per frame
@@ -33,13 +34,13 @@ public class Hose : MonoBehaviour {
 			{
 				if (!spraying)
 				{
-					particleSystem.Play();
+					particleSystem.GetComponent<ParticleSystem>().Play();
 					spraying = true;
 				}
 			}
 			else
 			{
-				particleSystem.Stop();
+				particleSystem.GetComponent<ParticleSystem>().Stop();
 				spraying = false;
 			}
 		}

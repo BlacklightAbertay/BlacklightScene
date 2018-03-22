@@ -7,10 +7,12 @@ using UnityEngine.XR.WSA.Input;
 public class Inventory : MonoBehaviour
 {
 
-	public GameObject[] inventoryItems;
+	public List<GameObject> inventoryItems;
 	public GameObject currentItem;
 
-	int selectedItem = 0;
+	public GrabAttach grabAttach;
+
+	int selectedItem = -1;
 	float angle;
 
 	public InputHandler leftInputHandler;
@@ -55,17 +57,24 @@ public class Inventory : MonoBehaviour
 
 	private void ObjectSelect()
 	{
-		float divisions = 360.0f / inventoryItems.Length;
+		int selectedDivision = 0;
 
-		// Offset angle
-		angle -= divisions / 2.0f;
-		if (angle < 0.0f)
+		if (inventoryItems.Count > 1)
 		{
-			angle = 360.0f + angle;
+			float divisions = 360.0f / inventoryItems.Count;
+
+			// Offset angle
+			angle -= divisions / 2.0f;
+			if (angle < 0.0f)
+			{
+				angle = 360.0f + angle;
+			}
+
+			float selectedDivisionF = angle / divisions;
+			selectedDivision = Mathf.FloorToInt(selectedDivisionF);
 		}
 
-		float selectedDivisionF = angle / divisions;
-		int selectedDivision = Mathf.FloorToInt(selectedDivisionF);
+		Debug.Log("Division: " + selectedDivision);
 
 		if (selectedDivision != selectedItem)
 		{
@@ -74,5 +83,37 @@ public class Inventory : MonoBehaviour
 			selectedItem = selectedDivision;
 			currentItem = Instantiate(inventoryItems[selectedDivision]);
 		}
+	}
+
+	private void AddToInventory(GameObject item)
+	{
+		GrabAttach grabAttach = item.GetComponent<GrabAttach>();
+		if (grabAttach != null)
+		{
+			Debug.Log("Has grab attach");
+			if (grabAttach.attachedToHand)
+			{
+				if (grabAttach.swapInventoryItem != null)
+				{
+					inventoryItems.Add(grabAttach.swapInventoryItem);
+					Destroy(item);
+				}
+				else
+				{
+					inventoryItems.Add(item);
+					Destroy(item);
+				}
+			}
+		}
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.tag == "GrabbableItem")
+		{
+			AddToInventory(other.gameObject);
+			Debug.Log("Touching");
+		}
+		
 	}
 }

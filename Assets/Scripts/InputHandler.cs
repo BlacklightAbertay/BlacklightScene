@@ -15,6 +15,8 @@ public class InputHandler : AttachToController
 
 	public bool triggerPressed = false;
 
+	public float triggerPressedAmount = 0.0f;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -48,6 +50,7 @@ public class InputHandler : AttachToController
 			touchpadTouched = obj.state.touchpadTouched;
 			thumbstickPosition = obj.state.thumbstickPosition;
 			triggerPressed = obj.state.selectPressed;
+			triggerPressedAmount = obj.state.selectPressedAmount;
 		}
 	}
 }

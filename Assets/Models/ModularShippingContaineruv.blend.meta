@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 688218a6a8fcebb40bd1cbdf9400b21c
+timeCreated: 1520417751
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: ContainerEnd_Back
+    100004: ContainerEnd_Front
+    100006: Corners
+    100008: Cube
+    100010: Empty_Center
+    100012: Empty_Center_001
+    100014: Frame_Back_L
+    100016: Frame_Back_R
+    100018: Frame_Base_Back
+    100020: Frame_Base_Front
+    100022: Frame_Base_L
+    100024: Frame_Base_R
+    100026: Frame_Base_Top
+    100028: Frame_Front_L
+    100030: Frame_Front_R
+    100032: Frame_Top_Front
+    100034: Frame_Top_L
+    100036: Frame_Top_R
+    100038: hingeA_L
+    100040: hingeA_R
+    100042: hingeB_L
+    100044: hingeB_R
+    100046: //RootNode
+    100048: Root
+    100050: Wall_Base
+    100052: Wall_L
+    100054: Wall_R
+    100056: Wall_Top
+    400000: Armature
+    400002: ContainerEnd_Back
+    400004: ContainerEnd_Front
+    400006: Corners
+    400008: Cube
+    400010: Empty_Center
+    400012: Empty_Center_001
+    400014: Frame_Back_L
+    400016: Frame_Back_R
+    400018: Frame_Base_Back
+    400020: Frame_Base_Front
+    400022: Frame_Base_L
+    400024: Frame_Base_R
+    400026: Frame_Base_Top
+    400028: Frame_Front_L
+    400030: Frame_Front_R
+    400032: Frame_Top_Front
+    400034: Frame_Top_L
+    400036: Frame_Top_R
+    400038: hingeA_L
+    400040: hingeA_R
+    400042: hingeB_L
+    400044: hingeB_R
+    400046: //RootNode
+    400048: Root
+    400050: Wall_Base
+    400052: Wall_L
+    400054: Wall_R
+    400056: Wall_Top
+    2100000: unnamed
+    2100002: Material
+    2300000: Corners
+    2300002: Cube
+    2300004: Frame_Back_L
+    2300006: Frame_Back_R
+    2300008: Frame_Base_Back
+    2300010: Frame_Base_Front
+    2300012: Frame_Base_L
+    2300014: Frame_Base_R
+    2300016: Frame_Base_Top
+    2300018: Frame_Front_L
+    2300020: Frame_Front_R
+    2300022: Frame_Top_Front
+    2300024: Frame_Top_L
+    2300026: Frame_Top_R
+    2300028: Wall_Base
+    2300030: Wall_L
+    2300032: Wall_R
+    2300034: Wall_Top
+    3300000: Corners
+    3300002: Cube
+    3300004: Frame_Back_L
+    3300006: Frame_Back_R
+    3300008: Frame_Base_Back
+    3300010: Frame_Base_Front
+    3300012: Frame_Base_L
+    3300014: Frame_Base_R
+    3300016: Frame_Base_Top
+    3300018: Frame_Front_L
+    3300020: Frame_Front_R
+    3300022: Frame_Top_Front
+    3300024: Frame_Top_L
+    3300026: Frame_Top_R
+    3300028: Wall_Base
+    3300030: Wall_L
+    3300032: Wall_R
+    3300034: Wall_Top
+    4300000: Cube
+    4300002: Frame_Front_L
+    4300004: Frame_Back_L
+    4300006: Frame_Front_R
+    4300008: Frame_Back_R
+    4300010: Frame_Base_Top
+    4300012: Frame_Top_Front
+    4300014: Frame_Base_Front
+    4300016: Frame_Top_L
+    4300018: Frame_Top_R
+    4300020: Frame_Base_R
+    4300022: Frame_Base_L
+    4300024: Wall_Top
+    4300026: Corners
+    4300028: Wall_L
+    4300030: Wall_R
+    4300032: ContainerEnd_Front
+    4300034: ContainerEnd_Back
+    4300036: Wall_Base
+    4300038: Frame_Base_Back
+    7400000: Default Take
+    7400002: Ends_Closed
+    7400004: Ends_Open
+    9500000: //RootNode
+    13700000: ContainerEnd_Back
+    13700002: ContainerEnd_Front
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

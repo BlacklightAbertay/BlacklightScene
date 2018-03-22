@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleport : MonoBehaviour {
+
+public class Teleport : MonoBehaviour
+{
 
 
 	public float floorHeight;
-	
+
 
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
 	}
-	
+
 	// Update is called once per frame
-	void Update ()
+	void Update()
 	{
-		
+
 	}
 
 	public void TeleportTo(Vector3 position)
